@@ -1,6 +1,6 @@
 import QuizImg from './images/codequiz.jpg';
 import WeatherImg from './images/weatherdashboard.jpg';
-import RoverImg from './images/weather-api.JPG';
+import RoverImg from './images/marrover.jpg';
 
 const myPortfolio = [
 	{

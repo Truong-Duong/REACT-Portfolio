@@ -5,15 +5,13 @@ const Header = () => {
 	return (
 		<div id="page-top" className="header-wraper">
 			<div className="main-info">
-				<h3>Hello, My name is</h3>
-                <h1>Truong Duong</h1>
-                <h2>And I am a</h2>
+				<h1>Hello, My name is Truong Duong</h1>
 				<Typed
 					className="typed-text"
 					strings={[
-						'Software Engineer',
-						'Cyber Analyst',
-						'Full Stack Web Developer',
+						'I am a Software Engineer',
+						'I am a Cyber Analyst',
+						'I am a Full Stack Web Developer',
 					]}
 					typeSpeed={50}
 					backSpeed={50}
