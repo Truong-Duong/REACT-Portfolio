@@ -1,19 +1,42 @@
-import React from 'react';
+import React from "react";
+import "./styles/Footer.css";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { HiOutlineMailOpen } from "react-icons/hi";
 
-const Footer = () => {
-	return (
-		<footer
-			className="text-center text-white"
-			style={{ backgroundColor: '#f1f1f1' }}
-		>
-			<div
-				className="text-center text-dark p-3"
-				style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}
-			>
-				Designed and Created by Truong Duong | Copyright &copy;2021 Truong Duong. Confidential and Proprietary. All Rights Reserved.
-			</div>
-		</footer>
-	);
-};
+function Footer() {
+  return (
+    <div className="container-fluid footer">
+      <div className="row d-flex justify-content-center">
+        <div className="col-6">
+          <div className="row">
+            <a
+              href="https://www.linkedin.com/in/truongduong/"
+              target="_blank"
+              className="col-4" rel="noreferrer"
+            >
+              <FaLinkedin size={50} />
+            </a>
 
+            <a
+              href="https://github.com/Truong-Duong"
+              target="_blank"
+              className="col-4" rel="noreferrer"
+            >
+              <FaGithub size={50} />
+            </a>
+
+            <a
+              href="mailto: truong.duong1908@gmail.com"
+              target="_blank"
+              className="col-4" rel="noreferrer"
+            >
+              <HiOutlineMailOpen size={50} />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
 export default Footer;

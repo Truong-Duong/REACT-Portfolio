@@ -1,43 +1,51 @@
-import React, { useState } from 'react';
-import {
-	Collapse,
-	Navbar,
-	NavbarToggler,
-	NavbarBrand,
-	Nav,
-	NavItem,
-	NavLink,
-	Container,
-} from 'reactstrap';
+import React from "react";
+import "./styles/Header.css";
+import "./styles/responsive.css";
 
-const ProfolioNav = (props) => {
-	const [isOpen, setIsOpen] = useState(false);
+function Navbar({ currentPage, handlePageChange }) {
+  return (
+    <div className="w-100 ">
+      <ul className="nav d-flex justify-content-around">
+        <li className="nav-item">
+          <a
+            href="#home"
+            onClick={() => handlePageChange("Home")}
+            className="navcss"
+          >
+            Home
+          </a>
+        </li>
 
-	const toggle = () => setIsOpen(!isOpen);
-	return (
-		<Navbar className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-			<Container>
-				<NavbarBrand className="logo">Truong Duong</NavbarBrand>
-				<NavbarToggler className="hamburger" onClick={toggle} />
-				<Collapse isOpen={isOpen} navbar>
-					<Nav className="ms-auto" navbar>
-						<NavItem className="active">
-							<NavLink href="#page-top">Home</NavLink>
-						</NavItem>
-						<NavItem className="active">
-							<NavLink href="#about-me">About Me</NavLink>
-						</NavItem>
-						<NavItem className="active">
-							<NavLink href="#myPortfolioList">Portfolio</NavLink>
-						</NavItem>
-						<NavItem className="active">
-							<NavLink href="#contact">Contacts</NavLink>
-						</NavItem>
-					</Nav>
-				</Collapse>
-			</Container>
-		</Navbar>
-	);
-};
+        <li className="nav-item">
+          <a
+            href="#aboutme"
+            onClick={() => handlePageChange("About")}
+            className="navcss"
+          >
+            About Me
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#projects"
+            onClick={() => handlePageChange("Projects")}
+            className="navcss"
+          >
+            Projects
+          </a>
+        </li>
+        <li className="nav-item">
+          <a
+            href="#contact"
+            onClick={() => handlePageChange("Contact")}
+            className="navcss"
+          >
+            Contact Me
+          </a>
+        </li>
+      </ul>
+    </div>
+  );
+}
 
-export default ProfolioNav;
+export default Navbar;

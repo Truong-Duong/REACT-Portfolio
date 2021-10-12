@@ -1,28 +1,12 @@
-import React from 'react';
-import Typed from 'react-typed';
+import React from "react";
+import "./styles/Header.css";
 
-const Header = () => {
-	return (
-		<div id="page-top" className="header-wraper">
-			<div className="main-info">
-				<h1>Hello, My name is Truong Duong</h1>
-				<Typed
-					className="typed-text"
-					strings={[
-						'I am a Software Engineer',
-						'I am a Cyber Analyst',
-						'I am a Full Stack Web Developer',
-					]}
-					typeSpeed={50}
-					backSpeed={50}
-					loop
-				/>
-				<a className="btn btn-header" href="#about-me">
-					About Me
-				</a>
-			</div>
-		</div>
-	);
-};
+function Header() {
+  return (
+    <header>
+      <h1>Truong Duong</h1>
+    </header>
+  );
+}
 
 export default Header;
