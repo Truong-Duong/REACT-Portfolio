@@ -1,0 +1,17 @@
+.footer {
+  background-color: black;
+  position: fixed;
+  bottom: 0%;
+}
+
+.icons {
+  justify-content: center;
+  align-items: center;
+  border: white 5px solid;
+  background-color: white;
+}
+
+.a {
+  color: white;
+  background-color: white;
+}

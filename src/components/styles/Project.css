@@ -1,0 +1,28 @@
+.imgProp {
+  max-width: 300px;
+  max-height: 200px;
+}
+.cards {
+  background-color: white;
+}
+
+.bordercustom {
+  border: black 1px solid;
+  border-radius: 17px;
+}
+
+.projtitle {
+  font-size: 1.5em;
+  justify-content: center;
+  padding: 10px;
+}
+
+.projDescription {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: white;
+  color: black;
+}

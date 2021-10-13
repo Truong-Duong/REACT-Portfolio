@@ -1,28 +1,9 @@
 {
-	"name": "REACT-Portfolio",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d build",
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Truong-Duong/REACT-Portfolio.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/Truong-Duong/REACT-Portfolio/issues"
-	},
-	"homepage": "https://github.com/Truong-Duong/REACT-Portfolio#readme",
-	"dependencies": {
+  "name": "react_portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://github.com/Truong-Duong/REACT-Portfolio.git",
+  "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -63,5 +44,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "React Portfolio",
+  "main": "index.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

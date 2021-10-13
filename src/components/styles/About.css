@@ -1,0 +1,12 @@
+.borderc {
+  border: black 5px solid;
+}
+
+.about {
+  background-color: black;
+}
+
+.about-border {
+  border: solid 5px black;
+  border-radius: 5px;
+}

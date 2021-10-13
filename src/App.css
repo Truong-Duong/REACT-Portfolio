@@ -1,7 +1,7 @@
 #root {
-	font-family: 'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 .main {
-	background-image: url("./images/me.jpg");
-	height: 100vh;
+  background-image: url("./components/pages/Img/dragon.jpg");
+  height: 100vh;
 }
